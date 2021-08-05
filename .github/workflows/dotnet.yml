@@ -32,7 +32,8 @@ jobs:
       - name: Build Solution
         run: |
           msbuild.exe Certify.sln /p:platform="Any CPU" /p:configuration="Release"
+    
       - uses: actions/upload-artifact@v2
         with:
           name: certify.exe
-          path: .\obj\Release\Certify.exe
+          path: D:\a\Certify\Certify\Certify\obj\Release\Certify.exe
